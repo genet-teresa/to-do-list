@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="todo-card">
+            <header class="todo-header">
+                <span class="todo-icon">✔</span>
+                <div>
+                    <h1>To-Do List</h1>
+                    <p>Stay organized and productive</p>
+                </div>
+            </header>
+
+            <section class="task-entry">
+                <input id="task-input" type="text" placeholder="Add a new task...">
+                <button id="add-task-btn">+ Add</button>
+            </section>
+
+            <section class="summary-grid">
+                <article class="summary-card">
+                    <span id="active-count">2</span>
+                    <small>Active</small>
+                </article>
+                <article class="summary-card">
+                    <span id="completed-count">1</span>
+                    <small>Completed</small>
+                </article>
+                <article class="summary-card">
+                    <span id="total-count">3</span>
+                    <small>Total</small>
+                </article>
+            </section>
+
+            <ul id="task-list" class="task-list" aria-live="polite"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
